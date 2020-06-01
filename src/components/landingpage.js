@@ -5,18 +5,26 @@ import sulisbanner from './../img/sulisbanner.png';
 class Landing extends Component {
 	render() {
 		return(
-			<div style={{width: '100%', margin:'auto'}}>
+			<div>
 				<Grid className="landing-grid">
-					<Cell col={12}>
+					{/*<Cell col={4}>
 						<img
 							src={sulisbanner}
 							alt="avatar"
 							className="avatar-img"
-						/>
-
+						/>						
+						
+					</Cell>*/}
+					<Cell col={12}>
+						<iframe width="80%" height="500" src="https://www.youtube.com/embed/9BeS1srFZho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</Cell>
+				</Grid>
+				
+				<Grid className="landing-grid">
+					<Cell col={12}>
 						<div className="banner-text">
-							<h1>Making Water Scarcity a Thing of the Past</h1>
-							<hr/>
+							{/*<h1>Making Water Scarcity a Thing of the Past</h1>*/}
+							{/* <br/><hr/> */}
 							<p>Enabling communities to easily clean water with an affordable and sustainable technology.</p>
 							<div className="social-links">
 								{/* fb */}
@@ -33,8 +41,10 @@ class Landing extends Component {
 								</a>
 							</div>
 						</div>
-						
 					</Cell>
+				</Grid>
+				<Grid className="landing-grid">
+					<br/>
 				</Grid>
 			</div>
 		)

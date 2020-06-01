@@ -4,12 +4,24 @@ import './App.css';
 import {Layout, Header, Navigation, Drawer, Content, Footer, FooterSection, FooterLinkList} from 'react-mdl';
 import Main from './components/main';
 import {Link} from 'react-router-dom'
+import sulisbanner from './img/sulisbanner.png';
 
 function App() {
   return (
     <div className="demo-big-content">
         <Layout>
-            <Header className="header-color" title={<Link style={{textDecoration:'none',color:'white'}} to="/sulis">SULIS</Link>} scroll>
+            <Header 
+                className="header-color" 
+                title={<Link 
+                            style={{textDecoration:'none',color:'white'}} to="/sulis">
+                            <img
+                                src={sulisbanner}
+                                alt="avatar"
+                                className="avatar-img"
+                            />  
+                        </Link>} 
+                scroll
+            >
                 <Navigation>
                     <Link to="/aboutus">About Us</Link>
 
@@ -28,8 +40,9 @@ function App() {
                 </Navigation>
             </Drawer>
             <Content>
-                <div className="page-content" />
-                <Main/>
+                <div className="page-content">
+                    <Main/>
+                </div>
             </Content>
             <Footer size="mini" className="footer">
                 <FooterSection type="left">
