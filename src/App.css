@@ -26,14 +26,6 @@
 	width: 100%;
 }
 
-.landing-icon-grid {
-	background: #112d53;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	text-align: center;
-	margin: auto;
-}
-
 .banner-text {
 	background-color: black;
 	opacity: .8;
@@ -51,12 +43,13 @@
 	border-top: 5px dotted white;
 	width: 50%;
 	margin: auto;
+	padding:5px;
 }
 
 .banner-text p {
 	color: white;
 	font-size: 25px;
-	padding: 1em;
+	padding: 10px;
 }
 
 .social-links {

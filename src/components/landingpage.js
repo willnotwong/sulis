@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Grid, Cell} from 'react-mdl';
-import sulisbanner from './../img/sulisbanner.png';
 
 class Landing extends Component {
 	render() {
@@ -25,7 +24,9 @@ class Landing extends Component {
 						<div className="banner-text">
 							{/*<h1>Making Water Scarcity a Thing of the Past</h1>*/}
 							{/* <br/><hr/> */}
-							<p>Enabling communities to easily clean water with an affordable and sustainable technology.</p>
+							<p>Sulis, Making Water Scarcity a Thing of the Past</p>
+							<hr/>
+							
 							<div className="social-links">
 								{/* fb */}
 								<a href="https://www.facebook.com/suliswaterinternational/" rel="noopener noreferrer" target="_blank">
@@ -40,6 +41,9 @@ class Landing extends Component {
 									<i className="fa fa-twitter" aria-hidden="true" />
 								</a>
 							</div>
+							
+							<hr/>
+							<p>Enabling communities to easily clean water with an affordable and sustainable technology.</p>
 						</div>
 					</Cell>
 				</Grid>
