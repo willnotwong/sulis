@@ -2,7 +2,6 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {Layout, Header, Navigation, Drawer, Content, Footer, FooterSection, FooterLinkList} from 'react-mdl';
-import cover from './img/cover.png';
 import Main from './components/main';
 import {Link} from 'react-router-dom'
 
