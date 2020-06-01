@@ -23,18 +23,18 @@ function App() {
                 scroll
             >
                 <Navigation>
-                    <Link to="/aboutus">About Us</Link>
+                    <Link to="/sulis/aboutus">About Us</Link>
 
-                    <Link to="/technology">Technology</Link>
+                    <Link to="/sulis/technology">Technology</Link>
                     <a href="https://www.indiegogo.com/projects/sulis-making-water-scarcity-a-thing-of-the-past#/" rel="noopener noreferrer" target="_blank">IndieGoGo</a>
                     {/*<Link to="/contact">Contact</Link>*/}
                 </Navigation>
             </Header>
             <Drawer title={<Link style={{textDecoration:'none',color:'grey'}} to="/sulis">SULIS</Link>}>
                 <Navigation>
-                    <Link to="/aboutus">About Us</Link>
+                    <Link to="/sulis/aboutus">About Us</Link>
 
-                    <Link to="/technology">Technology</Link>
+                    <Link to="/sulis/technology">Technology</Link>
                     <a href="https://www.indiegogo.com/projects/sulis-making-water-scarcity-a-thing-of-the-past#/" rel="noopener noreferrer" target="_blank">IndieGoGo</a>
                     {/*<Link to="/contact">Contact</Link>*/}
                 </Navigation>

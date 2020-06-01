@@ -8,9 +8,9 @@ import {Switch, Route} from 'react-router-dom';
 const Main = () => (
 	<Switch>
 		<Route exact path="/sulis" component={LandingPage} />
-		<Route path ="/technology" component={Technology} />
-		<Route path ="/contact" component={Contact} />
-		<Route path ="/aboutus" component={AboutUs} />
+		<Route path ="/sulis/technology" component={Technology} />
+		<Route path ="/sulis/contact" component={Contact} />
+		<Route path ="/sulis/aboutus" component={AboutUs} />
 
 	</Switch>
 )
