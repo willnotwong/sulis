@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="demo-big-content">
         <Layout>
-            <Header className="header-color" title={<Link style={{textDecoration:'none',color:'white'}} to="/">SULIS</Link>} scroll>
+            <Header className="header-color" title={<Link style={{textDecoration:'none',color:'white'}} to="/sulis">SULIS</Link>} scroll>
                 <Navigation>
                     <Link to="/aboutus">About Us</Link>
 
@@ -19,7 +19,7 @@ function App() {
                     {/*<Link to="/contact">Contact</Link>*/}
                 </Navigation>
             </Header>
-            <Drawer title={<Link style={{textDecoration:'none',color:'grey'}} to="/">SULIS</Link>}>
+            <Drawer title={<Link style={{textDecoration:'none',color:'grey'}} to="/sulis">SULIS</Link>}>
                 <Navigation>
                     <Link to="/aboutus">About Us</Link>
 
