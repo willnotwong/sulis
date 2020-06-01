@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/sulis/static/css/main.7384647c.chunk.css",
-    "main.js": "/sulis/static/js/main.37268aeb.chunk.js",
-    "main.js.map": "/sulis/static/js/main.37268aeb.chunk.js.map",
+    "main.css": "/sulis/static/css/main.8023e386.chunk.css",
+    "main.js": "/sulis/static/js/main.22b58a07.chunk.js",
+    "main.js.map": "/sulis/static/js/main.22b58a07.chunk.js.map",
     "runtime-main.js": "/sulis/static/js/runtime-main.0b9282b1.js",
     "runtime-main.js.map": "/sulis/static/js/runtime-main.0b9282b1.js.map",
     "static/css/2.e4346227.chunk.css": "/sulis/static/css/2.e4346227.chunk.css",
-    "static/js/2.e5aac4c0.chunk.js": "/sulis/static/js/2.e5aac4c0.chunk.js",
-    "static/js/2.e5aac4c0.chunk.js.map": "/sulis/static/js/2.e5aac4c0.chunk.js.map",
+    "static/js/2.eeeffa47.chunk.js": "/sulis/static/js/2.eeeffa47.chunk.js",
+    "static/js/2.eeeffa47.chunk.js.map": "/sulis/static/js/2.eeeffa47.chunk.js.map",
     "index.html": "/sulis/index.html",
-    "precache-manifest.68d0c2dc73e5b7a15f518450b6211c73.js": "/sulis/precache-manifest.68d0c2dc73e5b7a15f518450b6211c73.js",
+    "precache-manifest.bb9195620c67979202963a7364eaa22e.js": "/sulis/precache-manifest.bb9195620c67979202963a7364eaa22e.js",
     "service-worker.js": "/sulis/service-worker.js",
     "static/css/2.e4346227.chunk.css.map": "/sulis/static/css/2.e4346227.chunk.css.map",
-    "static/css/main.7384647c.chunk.css.map": "/sulis/static/css/main.7384647c.chunk.css.map",
-    "static/js/2.e5aac4c0.chunk.js.LICENSE.txt": "/sulis/static/js/2.e5aac4c0.chunk.js.LICENSE.txt",
+    "static/css/main.8023e386.chunk.css.map": "/sulis/static/css/main.8023e386.chunk.css.map",
+    "static/js/2.eeeffa47.chunk.js.LICENSE.txt": "/sulis/static/js/2.eeeffa47.chunk.js.LICENSE.txt",
     "static/media/anurag.png": "/sulis/static/media/anurag.08f9369e.png",
     "static/media/ari.png": "/sulis/static/media/ari.084877b7.png",
-    "static/media/cover.png": "/sulis/static/media/cover.ca58d0ed.png",
     "static/media/logo.svg": "/sulis/static/media/logo.5d5d9eef.svg",
     "static/media/sarah.jpg": "/sulis/static/media/sarah.1e294a8a.jpg",
     "static/media/sulisbanner.png": "/sulis/static/media/sulisbanner.adebdd53.png",
@@ -25,8 +24,8 @@
   "entrypoints": [
     "static/js/runtime-main.0b9282b1.js",
     "static/css/2.e4346227.chunk.css",
-    "static/js/2.e5aac4c0.chunk.js",
-    "static/css/main.7384647c.chunk.css",
-    "static/js/main.37268aeb.chunk.js"
+    "static/js/2.eeeffa47.chunk.js",
+    "static/css/main.8023e386.chunk.css",
+    "static/js/main.22b58a07.chunk.js"
   ]
 }
