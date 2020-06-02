@@ -26,6 +26,7 @@ function App() {
 
                     <Link to="/sulis/technology">Technology</Link>
                     <a href="https://www.indiegogo.com/projects/sulis-making-water-scarcity-a-thing-of-the-past#/" rel="noopener noreferrer" target="_blank">IndieGoGo</a>
+                    <Link to="/sulis/news">News</Link>
                     {/*<Link to="/contact">Contact</Link>*/}
                 </Navigation>
             </Header>
@@ -35,6 +36,7 @@ function App() {
 
                     <Link to="/sulis/technology">Technology</Link>
                     <a href="https://www.indiegogo.com/projects/sulis-making-water-scarcity-a-thing-of-the-past#/" rel="noopener noreferrer" target="_blank">IndieGoGo</a>
+                    <Link to="/sulis/news">News</Link>
                     {/*<Link to="/contact">Contact</Link>*/}
                 </Navigation>
             </Drawer>

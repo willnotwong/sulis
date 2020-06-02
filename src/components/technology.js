@@ -5,7 +5,7 @@ class Technology extends Component {
 
 	render() {
 		return(
-			<div className="projects-grid">
+			<div className="technology-grid">
 				<Grid>
 					<Cell col={12}>
 						<h2>The Sulis Device</h2>
