@@ -6,7 +6,7 @@ class NewsCard extends Component{
 		return(
 			<div>
 				{/* Card 1 */}
-				<Card shadow={5} style={{minWidth: '450'}}>
+				<Card shadow={5}>
 					<CardTitle style={{color: '#fff', height: '176px', background: `url(${this.props.background}) center/cover`}}></CardTitle>
 					<CardText>
 						<p style={{color:'black',fontSize:'20px'}}>{this.props.title}</p>

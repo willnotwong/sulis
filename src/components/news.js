@@ -19,7 +19,7 @@ class News extends Component {
 				
 				<div className="card-grid">
 					<Grid>
-						<Cell col={4}>
+						<Cell col={4} className="cardStyle">
 							<NewsCard
 								title="Rutgers Business School - Winning Rutgers Hult Prize"
 								description="SULIS: Redefining Liquid Sunshine wins Hult Prize at Rutgers Competition"
@@ -27,7 +27,7 @@ class News extends Component {
 								background="https://www.business.rutgers.edu/sites/default/files/styles/hero_detail_1200x500_/public/images/news/sulis-hult-hero_0.jpg?h=f97871b5&itok=TNSNKZmX"
 							/>
 						</Cell>
-						<Cell col={4}>
+						<Cell col={4} className="cardStyle">
 							<NewsCard
 								title="ROI-NJ"
 								description="Rutgers, Princeton make Hult Prize regional competition; potential to win $1M in seed cash"
@@ -35,7 +35,7 @@ class News extends Component {
 								background="https://i1.wp.com/www.roi-nj.com/wp-content/uploads/2018/03/Hult-Prize-2018-crop.jpg?fit=800%2C470&ssl=1"
 							/>
 						</Cell>
-						<Cell col={4}>
+						<Cell col={4} className="cardStyle">
 							<NewsCard
 								title="New Jersey Tech Weekly"
 								description="New Jersey startup Welnys takes January Bullpen Pitch Contest at Rutgers"
@@ -50,7 +50,7 @@ class News extends Component {
 				{/*row 2*/}
 				<div className="card-grid">
 					<Grid>
-						<Cell col={4}>
+						<Cell col={4} className="cardStyle">
 							<NewsCard
 								title="The Tab"
 								description="Rutgers becomes only school to have two winning Hult Prize teams"
@@ -58,7 +58,7 @@ class News extends Component {
 								background="https://media.thetab.com/blogs.dir/110/files/2018/03/redcarpetpremiere-redcarpet-premiere-team-speech-pressconference-crowd-audience-person-people-human-600x284.jpeg"
 							/>
 						</Cell>
-						<Cell col={4}>
+						<Cell col={4} className="cardStyle">
 							<NewsCard
 								title="Rutgers Today"
 								description="The challenge: Find a way to harness the power of energy to transform the lives of 10 million people in less than a decade."
@@ -66,7 +66,7 @@ class News extends Component {
 								background="https://www.rutgers.edu/sites/default/files/styles/max_width_embed_1024_1x/public/legacy-inline/2018/Apr/SulisHighRes.jpg?itok=Rpzo-DDV"
 							/>
 						</Cell>
-						<Cell col={4}>
+						<Cell col={4} className="cardStyle">
 							<NewsCard
 								title="The Daily Targum"
 								description="2 student groups from Rutgers win Hult Prize Regional Competition with new technology to approach water scarcity"
@@ -81,7 +81,7 @@ class News extends Component {
 				{/* row 3 */}
 				<div className="card-grid">
 					<Grid>
-						<Cell col={4}>
+						<Cell col={4} className="cardStyle">
 							<NewsCard
 								title="Rutgers Business School - Sulis Crowdfunding"
 								description="The Sulis team is crowdfunding to pay for a pilot of their water purification system in India next month. It’s another step in the team's quest for the $1 million Hult Prize."
@@ -90,7 +90,7 @@ class News extends Component {
 							/>
 						</Cell>
 						
-						<Cell col={4}>
+						<Cell col={4} className="cardStyle">
 							<NewsCard
 								title="Gujarati Local News"
 								description="12 લિટર ગંદુ પાણી સૂર્યઊર્જાથી 7 કલાકમાં ચોખ્ખું થઇ શકે"
@@ -99,7 +99,7 @@ class News extends Component {
 							/>				
 						</Cell>
 
-						<Cell col={4}>
+						<Cell col={4} className="cardStyle">
 							<NewsCard
 								title="More to Come"
 								description="Check back soon!"

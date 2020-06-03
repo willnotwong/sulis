@@ -120,9 +120,12 @@
 
 .card-grid{
 	padding-bottom: 50px;
-	margin:auto;
+}
+
+.cardStyle{
 	display: flex;
-	justify-content: space-evenly;
+	align-items: center;
+	justify-content: center;
 }
 
 /* news page end */
