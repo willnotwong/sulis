@@ -7,8 +7,9 @@ class NewsCard extends Component{
 			<div>
 				{/* Card 1 */}
 				<Card shadow={5} style={{minWidth: '450'}}>
-					<CardTitle style={{color: '#fff', height: '176px', background: 'url(https://www.inovex.de/blog/wp-content/uploads/2022/01/one-year-of-react-native.png) center/cover'}}>{this.props.title}</CardTitle>
+					<CardTitle style={{color: '#fff', height: '176px', background: `url(${this.props.background}) center/cover`}}></CardTitle>
 					<CardText>
+						<p style={{color:'black',fontSize:'20px'}}>{this.props.title}</p>
 						{this.props.description}
 					</CardText>
 					<CardActions border>
