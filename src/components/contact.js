@@ -3,17 +3,6 @@ import {Form, Button} from 'react-bootstrap';
 import {Cell, Grid} from 'react-mdl';
 import emailjs from 'emailjs-com';
 
-function sendEmail(e) {
-	    e.preventDefault();
-
-	    emailjs.sendForm('sulis', 'template_QUjTl6Xv', e.target, 'user_jcrsJjU0RO1iFk1npN4jl')
-	      .then((result) => {
-	          console.log(result.text);
-	      }, (error) => {
-	          console.log(error.text);
-	      });
-  	}
-
 class Contact extends Component {
 
 	constructor(){
