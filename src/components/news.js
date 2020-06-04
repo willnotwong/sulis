@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton} from 'react-mdl';
+import {Grid, Cell} from 'react-mdl';
 import NewsCard from './newscard.js';
 
 class News extends Component {	

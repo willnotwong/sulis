@@ -1,51 +1,96 @@
 import React, {Component} from 'react';
-import {Grid, Cell, List, ListItem, ListItemContent} from 'react-mdl';
+import {Form, Button} from 'react-bootstrap';
+import {Cell, Grid} from 'react-mdl';
+import emailjs from 'emailjs-com';
+
+function sendEmail(e) {
+	    e.preventDefault();
+
+	    emailjs.sendForm('sulis', 'template_QUjTl6Xv', e.target, 'user_jcrsJjU0RO1iFk1npN4jl')
+	      .then((result) => {
+	          console.log(result.text);
+	      }, (error) => {
+	          console.log(error.text);
+	      });
+  	}
 
 class Contact extends Component {
+
+	constructor(){
+		super()
+		this.state={
+			name:"",
+			email:"",
+			message:""
+		}
+		this.handleChange = this.handleChange.bind(this)
+		this.submitEmail = this.submitEmail.bind(this)
+	}
+
+	handleChange(event){
+		const {name,value} = event.target
+		
+		this.setState({
+			[name]: value
+		})
+		console.log(this.state)
+	}
+
+	submitEmail(event){
+		event.preventDefault()
+
+	    emailjs.send('sulis', 'template_QUjTl6Xv', this.state, 'user_jcrsJjU0RO1iFk1npN4jl')
+	      .then((result) => {
+	          console.log(result.text);
+	      }, (error) => {
+	          console.log(error.text);
+	      });
+	}
+
 	render() {
 		return(
-			<div className="contact-body">
-				<Grid className="contact-grid">
-					<Cell col={6}>
-						<h2>Prson Nam</h2>
-						<img
-							src="https://cdn2.iconfinder.com/data/icons/avatar-2/512/Fred_man-512.png"
-							alt="avatar"
-							style={{height:'250px'}}	
-						/>
-						<p style={{width: '75%', margin:'auto', paddingTop:'1em'}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an </p>
-					</Cell>
-					<Cell col={6}>
-						<h2>Contact Me</h2>
-						<hr/>
+			<div>
+				<div className="contact-grid">
+						<Grid>
+							<Cell col={12}>
+								<h2>Contact Us</h2>
+								<hr/>
+									
+							</Cell>
+						</Grid>
+				</div>
 
-						<div className="contact-list">
-							<List>
-							  <ListItem>
-							    <ListItemContent style={{fontSize: '30px', fontFamily:'Anton'}}>
-							    	<i className="fa fa-phone-square" aria-hidden="true"/>
-							    	(123) 456-7890
-							    </ListItemContent>
-							  </ListItem>
-							  
-							  <ListItem>
-							    <ListItemContent style={{fontSize: '30px', fontFamily:'Anton'}}>
-							    	<i className="fa fa-fax" aria-hidden="true"/>
-							    	(123) 456-7890
-							    </ListItemContent>
-							  </ListItem>
+				<div className="contact-grid">
+					<Grid>
+						<Cell col={12}>
+							<Form onSubmit={this.submitEmail}>
+							
+							  <Form.Group controlId="formBasicPassword">
+							    <Form.Label>Name</Form.Label>
+							    <Form.Control type="name" placeholder="Enter name" name="name" onChange={this.handleChange}/>
+							  </Form.Group>
 
-							  <ListItem>
-							    <ListItemContent style={{fontSize: '30px', fontFamily:'Anton'}}>
-							    	<i className="fa fa-envelope-square" aria-hidden="true"/>
-							    	something@email.com
-							    </ListItemContent>
-							  </ListItem>
-							</List>
-						</div>
+							  <Form.Group controlId="formBasicEmail">
+							    <Form.Label>Email address</Form.Label>
+							    <Form.Control type="email" placeholder="Enter email" name="email" onChange={this.handleChange} />
+							    <Form.Text className="text-muted">
+							      We'll never share your email with anyone else.
+							    </Form.Text>
+							  </Form.Group>
 
-					</Cell>
-				</Grid>
+							  <Form.Group controlId="exampleForm.ControlTextArea1">
+							    <Form.Label>Message</Form.Label>
+							    <Form.Control as="textarea" rows="5" name="message" onChange={this.handleChange}/>
+							  </Form.Group>
+							  <Button variant="primary" type="submit">
+							    Submit
+							  </Button>
+							</Form>
+									
+						</Cell>
+					</Grid>
+					
+			    </div>
 			</div>
 		)
 	}
