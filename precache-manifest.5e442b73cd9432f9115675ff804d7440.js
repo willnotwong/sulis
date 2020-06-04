@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d98d35a1ee4ea1026652f5c0e0b86c69",
+    "revision": "fcd85c049f4166231ce2d3e7c3162417",
     "url": "/sulis/index.html"
   },
   {
-    "revision": "a3050695c5243550c890",
+    "revision": "1e6999eae2206d98803d",
     "url": "/sulis/static/css/2.e4346227.chunk.css"
   },
   {
-    "revision": "649257d7fd6898c15dca",
+    "revision": "835158b18e3455c83b29",
     "url": "/sulis/static/css/main.b59f5022.chunk.css"
   },
   {
-    "revision": "a3050695c5243550c890",
-    "url": "/sulis/static/js/2.f9ca635d.chunk.js"
+    "revision": "1e6999eae2206d98803d",
+    "url": "/sulis/static/js/2.0f9030a3.chunk.js"
   },
   {
     "revision": "e1d2b252d73a4c2bc4d6802ca4ba1aa0",
-    "url": "/sulis/static/js/2.f9ca635d.chunk.js.LICENSE.txt"
+    "url": "/sulis/static/js/2.0f9030a3.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "649257d7fd6898c15dca",
-    "url": "/sulis/static/js/main.b3bb99b5.chunk.js"
+    "revision": "835158b18e3455c83b29",
+    "url": "/sulis/static/js/main.f5af5574.chunk.js"
   },
   {
     "revision": "f411f2567ee06ce0b412",
