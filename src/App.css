@@ -12,8 +12,11 @@
 }
 
 
-.footer {
+.mr-auto {
 	/*margin-top:50px;*/
+
+	margin: auto;
+  	width: 10%;
 }
 
 
@@ -135,6 +138,60 @@
 .contact-grid{
 	margin: auto;
 	width: 80%;
+	padding-bottom: 50px;
+}
+
+.contact-grid p{
+	font-size: 17px;
 }
 
 /*contact page end */
+
+/* privacy page start*/
+.privacy-grid{
+	margin: auto;
+	width: 80%;
+	padding-bottom: 50px;
+}
+
+.privacy-grid h2{
+	text-align: center;
+	font-size: 40px;
+}
+
+.privacy-grid h3{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.privacy-grid p{
+	font-size: 14px;
+}
+/* privacy page end */
+
+/* terms page start*/
+.terms-grid{
+	margin: auto;
+	width: 80%;
+	padding-bottom: 50px;
+}
+
+.terms-grid h2{
+	text-align: center;
+	font-size: 40px;
+}
+
+.terms-grid h3{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.terms-grid h4{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.terms-grid p{
+	font-size: 14px;
+}
+/* terms page end */

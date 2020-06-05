@@ -13,7 +13,7 @@ class NewsCard extends Component{
 						{this.props.description}
 					</CardText>
 					<CardActions border>
-						<Button colored style={{float:'right'}} href={this.props.link}>Read More</Button>
+						<Button colored style={{float:'right'}} href={this.props.link} rel="noopener noreferrer" target="_blank">Read More</Button>
 					</CardActions>
 					<CardMenu style={{color: '#fff'}}>
 						<IconButton name="share" />

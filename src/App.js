@@ -4,6 +4,7 @@ import {Layout, Header, Navigation, Drawer, Content, Footer, FooterSection, Foot
 import Main from './components/main';
 import {Link} from 'react-router-dom'
 import sulisbanner from './img/sulisbanner.png';
+import {Nav, Navbar} from 'react-bootstrap';
 
 function App() {
   return (
@@ -47,15 +48,25 @@ function App() {
                     <Main/>
                 </div>
             </Content>
-            <Footer size="mini" className="footer">
+            {/*<Footer size="mini" className="footer">
                 <FooterSection type="left">
                     <FooterLinkList>
-                        <a href="#">Help</a>
-                        <a href="#">Privacy & Terms</a>
-                        <a style={{ fontSize:'16px',color:'#424242' }} href="#">William Wong</a>
+                        <Link to="/sulis/privacy">Privacy</Link>
+                        <Link to="/sulis/terms">Terms</Link>
+                        <a style={{ fontSize:'16px',color:'#424242' }}>William Wong</a>
                     </FooterLinkList>
                 </FooterSection>
-            </Footer>               
+            </Footer> */}
+            <Navbar sticky="bottom" collapseOnSelect expand="lg" bg="dark" variant="dark">
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              <Navbar.Collapse id="responsive-navbar-nav">
+                <Nav className="mr-auto">
+                  <Nav.Link><Link to="/sulis/privacy" style={{fontSize:'15px', color:'#C2C2BF', textDecoration:"none"}}>Privacy</Link></Nav.Link>
+                  <Nav.Link><Link to="/sulis/terms" style={{fontSize:'15px', color:'#C2C2BF', textDecoration:"none"}}>Terms</Link></Nav.Link>
+                  <a style={{ fontSize:'16px',color:'#343a40' }}>William Wong</a>
+                </Nav>
+              </Navbar.Collapse>
+            </Navbar>           
         </Layout>     
     </div>
 

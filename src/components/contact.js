@@ -9,8 +9,11 @@ class Contact extends Component {
 		super()
 		this.state={
 			name:"",
+			organization:"",
 			email:"",
-			message:""
+			phonenumber:"",
+			message:"",
+			success:"0"
 		}
 		this.handleChange = this.handleChange.bind(this)
 		this.submitEmail = this.submitEmail.bind(this)
@@ -31,25 +34,56 @@ class Contact extends Component {
 	    emailjs.send('sulis', 'template_QUjTl6Xv', this.state, 'user_jcrsJjU0RO1iFk1npN4jl')
 	      .then((result) => {
 	          console.log(result.text);
+	          this.setState({
+	          	success:"1"
+	          })
 	      }, (error) => {
 	          console.log(error.text);
+	          this.setState({
+	          	success:"2"
+	          })
 	      });
+	}
+
+	toggleSuccess(){
+		if(this.state.success === "0"){
+			return(
+				<div></div>
+			)
+		}
+		else if(this.state.success === "1"){
+			return(
+				<div>
+					<br/>
+					<p style={{color:"green"}}>OK! Message successfully sent</p>
+					
+				</div>
+			)
+		}
+		else if(this.state.success === "2"){
+			return(
+				<div>
+					<br/>
+					<p style={{color:"red"}}>Uh Oh! Looks like there was an error, try again later</p>
+					
+				</div>
+			)
+		}
 	}
 
 	render() {
 		return(
 			<div>
-				<div className="contact-grid">
-						<Grid>
-							<Cell col={12}>
-								<h2>Contact Us</h2>
-								<hr/>
-									
-							</Cell>
-						</Grid>
-				</div>
 
 				<div className="contact-grid">
+					<Grid>
+						<Cell col={12}>
+							<h2>Contact Us</h2>
+							<p>Are you looking to obtain more information about us or are interested in investing or establishing a partnership? Please fill out the form below and specify the nature of your request. We will respond to you as soon as we can.</p>
+							<hr/>
+								
+						</Cell>
+					</Grid>
 					<Grid>
 						<Cell col={12}>
 							<Form onSubmit={this.submitEmail}>
@@ -57,6 +91,11 @@ class Contact extends Component {
 							  <Form.Group controlId="formBasicPassword">
 							    <Form.Label>Name</Form.Label>
 							    <Form.Control type="name" placeholder="Enter name" name="name" onChange={this.handleChange}/>
+							  </Form.Group>
+
+							  <Form.Group controlId="formBasicPassword">
+							    <Form.Label>Organization</Form.Label>
+							    <Form.Control type="organization" placeholder="Enter organization" name="organization" onChange={this.handleChange}/>
 							  </Form.Group>
 
 							  <Form.Group controlId="formBasicEmail">
@@ -67,6 +106,11 @@ class Contact extends Component {
 							    </Form.Text>
 							  </Form.Group>
 
+							  <Form.Group controlId="formBasicPassword">
+							    <Form.Label>Phone number</Form.Label>
+							    <Form.Control type="phonenumber" placeholder="Enter phone number" name="phonenumber" onChange={this.handleChange}/>
+							  </Form.Group>
+
 							  <Form.Group controlId="exampleForm.ControlTextArea1">
 							    <Form.Label>Message</Form.Label>
 							    <Form.Control as="textarea" rows="5" name="message" onChange={this.handleChange}/>
@@ -74,6 +118,7 @@ class Contact extends Component {
 							  <Button variant="primary" type="submit">
 							    Submit
 							  </Button>
+							  {this.toggleSuccess()}
 							</Form>
 									
 						</Cell>
