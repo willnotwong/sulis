@@ -47,26 +47,29 @@ function App() {
                 <div className="page-content">
                     <Main/>
                 </div>
+                <Footer size="mini" className="footer">
+                    <FooterSection type="left">
+                        <FooterLinkList>
+                            <Link to="/sulis/privacy">Privacy</Link>
+                            <Link to="/sulis/terms">Terms</Link>
+                            <a style={{ fontSize:'16px',color:'#424242' }}>William Wong</a>
+                        </FooterLinkList>
+                    </FooterSection>
+                </Footer>
             </Content>
-            {/*<Footer size="mini" className="footer">
-                <FooterSection type="left">
-                    <FooterLinkList>
-                        <Link to="/sulis/privacy">Privacy</Link>
-                        <Link to="/sulis/terms">Terms</Link>
-                        <a style={{ fontSize:'16px',color:'#424242' }}>William Wong</a>
-                    </FooterLinkList>
-                </FooterSection>
-            </Footer> */}
+            
+            {/*
             <Navbar sticky="bottom" collapseOnSelect expand="lg" bg="dark" variant="dark">
               <Navbar.Toggle aria-controls="responsive-navbar-nav" />
               <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
                   <Nav.Link><Link to="/sulis/privacy" style={{fontSize:'15px', color:'#C2C2BF', textDecoration:"none"}}>Privacy</Link></Nav.Link>
                   <Nav.Link><Link to="/sulis/terms" style={{fontSize:'15px', color:'#C2C2BF', textDecoration:"none"}}>Terms</Link></Nav.Link>
-                  <a style={{ fontSize:'16px',color:'#343a40' }}>William Wong</a>
+
                 </Nav>
               </Navbar.Collapse>
             </Navbar>           
+            */}
         </Layout>     
     </div>
 
