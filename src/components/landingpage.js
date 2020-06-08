@@ -5,19 +5,19 @@ class Landing extends Component {
 	render() {
 		return(
 			<div>
-				<Grid className="landing-grid">
-					{/*<Cell col={4}>
+				{/*<Grid className="landing-grid">
+					<Cell col={4}>
 						<img
 							src={sulisbanner}
 							alt="avatar"
 							className="avatar-img"
 						/>						
 						
-					</Cell>*/}
+					</Cell>
 					<Cell col={12}>
 						<iframe width="80%" height="450" src="https://www.youtube.com/embed/9BeS1srFZho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</Cell>
-				</Grid>
+				</Grid>*/}
 				
 				<Grid className="landing-grid">
 					<Cell col={12}>
@@ -26,6 +26,9 @@ class Landing extends Component {
 							{/* <br/><hr/> */}
 							<p>Sulis, Making Water Scarcity a Thing of the Past</p>
 							<hr/>
+							<div className="video-grid">
+								<iframe width="80%" height="450" src="https://www.youtube.com/embed/9BeS1srFZho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
 							
 							<div className="social-links">
 								{/* fb */}

@@ -48,7 +48,7 @@ function App() {
                     <Main/>
                 </div>
                 <Footer size="mini" className="footer">
-                    <FooterSection type="left">
+                    <FooterSection type="middle">
                         <FooterLinkList>
                             <Link to="/sulis/privacy">Privacy</Link>
                             <Link to="/sulis/terms">Terms</Link>

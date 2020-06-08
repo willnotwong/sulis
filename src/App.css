@@ -37,6 +37,7 @@
 	width: 75%;
 	margin: auto;
 	border-radius: 10px;
+	padding-top: 10px;
 }
 
 .banner-text h1 {
@@ -55,6 +56,11 @@
 	color: white;
 	font-size: 25px;
 	padding: 10px;
+}
+
+.video-grid {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .social-links {
@@ -98,6 +104,7 @@
 /* technology page start */
 	
 .technology-grid{
+	padding-top:40px;
 	width: 80%;
 	margin: auto;
 	padding-bottom:50px;

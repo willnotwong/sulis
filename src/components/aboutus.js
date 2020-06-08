@@ -4,6 +4,9 @@ import Anurag from './../img/anurag.png';
 import Yuki from './../img/yuki.png';
 import Sarah from './../img/sarah.jpg';
 import Ari from './../img/ari.png';
+import slogan from './../img/slogan.jpg';
+import cleanwater from './../img/cleanwater.jpg';
+import marketsegment from './../img/marketsegment.jpg';
 
 class AboutUs extends Component {
 
@@ -17,16 +20,25 @@ class AboutUs extends Component {
 			return(
 				<div className="projects-grid">
 					<Grid>
-						<Cell col={12}>
+						<Cell col={5}>
 							<h2>Who We Are</h2>
 							<p>Sulis Water International, Inc. is a social entrepreneurship venture dedicated to addressing the global clean water scarcity.</p>
-							<hr/>
-							<h2>The Meaning of Our Name</h2>
 							<p>When our device was initially conceptualized, it was referred to as the “solar ultraviolet light-induced sterilization array,” abbreviated as the S.U.L.I.S. array. As we iterated and refined the device and underlying technology, the array aspect was dropped, leaving just the acronym “S.U.L.I.S.” As we began approaching commercialization, we sought to develop an identity that captured the essence of our mission, vision, and values in a concise manner.</p>
-							<p>Our team envisions the company evolving beyond this singular product, however we decided to keep “Sulis” as the name of the company because it combines the functionality of our device with the rich linguistic and cultural histories of several civilizations. Our connection to solar energy is evidenced in the common roots of English sun, Latin sol, and Sanskrit Surya, the Hindu solar deity, to Sulis. In addition, Sulis Minerva was the Romano-British goddess of springs, which represents our connection with water. The Sanskrit prefix su-, meaning good, symbolizes our good intentions and desire to empower and uplift people without access to sanitized water.</p>
-							<hr/>
+
 
 						</Cell>
+						<Cell col={7}>
+							<img src={slogan} alt="slogan" width="100%"/>
+						</Cell>
+					</Grid>
+					<Grid>
+						<Cell col={12}>
+							<hr/>
+							<h2>The Meaning of Our Name</h2>
+							<p>Our team envisions the company evolving beyond this singular product, however we decided to keep “Sulis” as the name of the company because it combines the functionality of our device with the rich linguistic and cultural histories of several civilizations. Our connection to solar energy is evidenced in the common roots of English sun, Latin sol, and Sanskrit Surya, the Hindu solar deity, to Sulis. In addition, Sulis Minerva was the Romano-British goddess of springs, which represents our connection with water. The Sanskrit prefix su-, meaning good, symbolizes our good intentions and desire to empower and uplift people without access to sanitized water.</p>
+							<hr/>
+						</Cell>
+
 					</Grid>
 				</div>
 			)
@@ -100,17 +112,40 @@ class AboutUs extends Component {
 			return(
 				<div className="projects-grid">
 					<Grid>
-						<Cell col={12}>
+						<Cell col={5}>
 							<h2>By supplying clean water, Sulis transforms lives.</h2>
-							<p>Sulis is a simple and innovative technology for water sanitation. In many parts of the world, clean water is a luxury that cannot be taken for granted. Water scarcity is a global issue that affects more than 40% of the world population today. Collectively, women and children spend 140 million hours daily collecting water, which does not even account for the time that they spend each day cleaning that water. Collecting and cleaning water takes time away from work, school, and caring for family, which locks families in a cycle of poverty. In addition to the economic and safety risks, health is a serious concern. It is devastating to consider that over a thousand children die from a preventable water-related disease every day. There is a desperate need for a safer, more reliable way to access clean water. We need a solution that allows people to clean the contaminated water they do have available.</p>
-							<hr/>
-							<h2>Sulis is the solution.</h2>
-							<p>We have developed a groundbreaking technology that harnesses the power of sunlight to clean water. Sulis is affordable, sustainably produced, and effective at generating potable water without depending on infrastructure. Our technology eliminates pathogens from the water source, drastically improving the health and wellbeing of those without naturally safe water. By giving individuals the ability to easily clean the water they have nearby with only solar energy, Sulis saves users those long hours collecting the wood and buying the kerosene needed to boil their water. This enables people to stay in school and at work for more hours, gives them the freedom to start their own businesses, and allows them to improve their own standard of living, rather than depending on others. In essence, Sulis does more than provide clean water, it empowers. </p>
-							<hr/>
-							
+							<p>Sulis is a simple and innovative technology for water sanitation. In many parts of the world, clean water is a luxury that cannot be taken for granted. Water scarcity is a global issue that affects more than 40% of the world population today. Collectively, women and children spend 140 million hours daily collecting water, which does not even account for the time that they spend each day cleaning that water.</p>
 
 						</Cell>
+						<Cell col={7}>
+							<img src={cleanwater} alt="cleanwater" width="100%"/>
+						</Cell>
 					</Grid>
+					<Grid>
+
+						<Cell col={12}>
+							<p> Collecting and cleaning water takes time away from work, school, and caring for family, which locks families in a cycle of poverty. In addition to the economic and safety risks, health is a serious concern. It is devastating to consider that over a thousand children die from a preventable water-related disease every day. There is a desperate need for a safer, more reliable way to access clean water. We need a solution that allows people to clean the contaminated water they do have available.</p>
+						</Cell>
+						
+					</Grid>
+					<hr/>
+					<Grid>
+
+						<Cell col={7}>
+							<img src={marketsegment} alt="marketsegment" width="100%"/>
+						</Cell>
+						<Cell col={5}>
+							
+							<h2>Sulis is the solution.</h2>
+							<p>We have developed a groundbreaking technology that harnesses the power of sunlight to clean water. Sulis is affordable, sustainably produced, and effective at generating potable water without depending on infrastructure. Our technology eliminates pathogens from the water source, drastically improving the health and wellbeing of those without naturally safe water. By giving individuals the ability to easily clean the water they have nearby with only solar energy, Sulis saves users those long hours collecting the wood and buying the kerosene needed to boil their water. </p>
+						</Cell>
+					</Grid>
+					<Grid>
+						<Cell col={12}>
+							<p>This enables people to stay in school and at work for more hours, gives them the freedom to start their own businesses, and allows them to improve their own standard of living, rather than depending on others. In essence, Sulis does more than provide clean water, it empowers. </p>
+						</Cell>
+					</Grid>
+					<hr/>
 				</div>
 			)
 		}
