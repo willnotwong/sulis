@@ -120,7 +120,7 @@ class Contact extends Component {
 							  </Button>
 							  {this.toggleSuccess()}
 							</Form>
-									
+							
 						</Cell>
 					</Grid>
 					

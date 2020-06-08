@@ -106,7 +106,7 @@ class News extends Component {
 							/>
 						</Cell>
 					</Grid>
-
+					
 				</div>
 			</div>
 		)
